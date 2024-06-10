@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400">
+    <!-- <div class="content_class"> -->
+        <h1 class="title_class text-center text-3x1 text-black my-10 font-bold uppercase ">BUSCADOR DE IMAGENES PIXABAY</h1>
+        <div class="buscador max-w-lg mx-auto">
+            <form class="formulario">
+                <div class="content_fomulario">
+                    <label class="formulario__label block text-black font-bold uppercase">
+                        TERMINO DE BUSQUEDA
+                    </label>
+                    <input id="termino" class="formulario__input mt-3 rounded w-full p-2" type="text" placeholder="Termino de busqueda. Ejemplo: Café o Futbol">
+                    <button type="submit" value="Buscar Imagenes" class="mt-5 w-full py-2 bg-yellow-400 cursor-pointer font-bold uppercase hover:bg-yellow-500 rounded" id="formularion__Submit">click </button>
+
+                </div>
+            </form>
+        </div>
+        <div class="container mx-auto mt-10 flex flex-wrap" id="resultado" ></div>
+        <div class="container mx-auto mb-10 text-center flex flex-wrap" id="paginacion"></div>
+
+    <!-- </div> -->
+    <script src="../js/logic_busqueda_img.js"></script>
+</body>
+</html>
+
+<!-- https://pixabay.com/api/docs/      Direccion de la Api que se esta utilizando en la clase -->
+ 
